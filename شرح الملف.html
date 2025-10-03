@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرح أداة حاسبة العمر - Axiom AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* ------------------ التصميم العام ------------------ */
+        :root {
+            --axiom-blue: #0A3D62; /* لون Axiom AI */
+            --highlight-color: #2ECC71; /* لون أخضر للتركيز */
+            --background-color: #f0f4f7;
+            --card-color: #ffffff;
+            --text-color: #333;
+            --shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            line-height: 1.7;
+            padding: 40px 20px;
+            color: var(--text-color);
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-color);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            padding: 30px 40px;
+        }
+
+        h1, h2 {
+            color: var(--axiom-blue);
+            font-weight: 900;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--highlight-color);
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        strong {
+            color: var(--axiom-blue);
+            font-weight: 700;
+        }
+
+        /* تنسيق فقرة الشركة والتحديثات */
+        .company-info, .update-section {
+            background-color: #e8f5e9;
+            border-right: 5px solid var(--highlight-color);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .update-section a {
+            color: var(--axiom-blue);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        .update-section a:hover {
+            color: var(--highlight-color);
+            text-decoration: underline;
+        }
+
+        /* تنسيق قسم الكود */
+        .code-section {
+            margin: 30px 0;
+        }
+
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-family: monospace;
+            direction: ltr; /* لضمان عرض الأكواد بشكل صحيح */
+            text-align: left;
+        }
+
+        .code-explanation {
+            border: 1px dashed var(--axiom-blue);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        .code-explanation span {
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* الأيقونات */
+        .icon {
+            color: var(--highlight-color);
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><i class="icon fas fa-cogs"></i> شرح كود أداة حاسبة العمر</h1>
+
+        <p>هذا الملف هو كود **HTML** متكامل يشمل لغات **CSS** للتصميم و **JavaScript** للحساب. صُممت الأداة لتقدم حسابًا دقيقًا لعمر المستخدم بالسنوات والأشهر والأيام.</p>
+
+        <div class="company-info">
+            <h2><i class="icon fas fa-building"></i> تطوير بواسطة: Axiom AI</h2>
+            <p>تم تطوير هذه الأداة بواسطة فريق **Axiom AI Developer Studio**. تهدف Axiom AI إلى بناء حلول برمجية ذكية وتفاعلية في مجالات مختلفة.</p>
+            <p>
+                **Axiom AI** هي شركة تقنية رائدة في مجال الذكاء الاصطناعي وتطوير الويب، وهي مملوكة لمجموعة من المستثمرين التقنيين ذوي الخبرة العالية في بناء منصات متقدمة وواجهات مستخدم احترافية. وتُعد هذه الأداة مثالاً على التزام الشركة بتقديم منتجات عالية الجودة والدقة.
+            </p>
+        </div>
+
+        ---
+
+        <div class="code-section">
+            <h2><i class="icon fas fa-code"></i> هيكلة الكود (HTML, CSS, JavaScript)</h2>
+            <p>ينقسم الكود إلى ثلاثة أقسام رئيسية:</p>
+            <ul>
+                <li>**HTML**: الهيكل الأساسي الذي يحتوي على حقول الإدخال والزر ومكان عرض النتيجة.</li>
+                <li>**CSS**: المسؤول عن الجماليات، استخدام خط **Cairo** الاحترافي، الألوان الجذابة، وتأثيرات الانيميشن البسيطة عند الضغط على الزر.</li>
+                <li>**JavaScript**: عقل الأداة، يقوم بجلب تاريخ الميلاد، إجراء عملية الحساب المعقدة للسنوات والأشهر والأيام، وعرض النتيجة بشكل مُخصص.</li>
+            </ul>
+
+            <div class="code-explanation">
+                <span><i class="icon fas fa-magic"></i> **آلية عمل JavaScript:** تعتمد على الدالة **`calculateAge()`**. تقوم الدالة بحساب الفرق بين التاريخ الحالي وتاريخ الميلاد المُدخل، مع مراعاة الأشهر والأيام التي لم تكتمل بعد، لتقديم حساب دقيق وموثوق.</span>
+            </div>
+
+            <p><strong>ملاحظة:</strong> الكود البرمجي للأداة السابقة هو الكود الكامل الذي يُمكنك وضعه في أي محرر نصوص وحفظه كملف HTML لتشغيله مباشرة.</p>
+        </div>
+
+        ---
+
+        <h2><i class="icon fas fa-globe"></i> طريقة التشغيل والاستضافة</h2>
+
+        <p>تشغيل هذه الأداة بسيط جداً، ويمكنك التعامل معها بأكثر من طريقة:</p>
+
+        <p><strong>1. التشغيل المباشر (الأسهل):</strong></p>
+        <ul>
+            <li>احفظ الكود بالكامل في ملف واحد بصيغة **`.html`** (مثل: `age_calc.html`).</li>
+            <li>انقر مرتين على الملف. سيفتح تلقائياً في متصفحك (Chrome, Firefox, Edge) ويعمل فوراً، دون الحاجة لأي خوادم.</li>
+        </ul>
+
+        <p><strong>2. الاستضافة على الويب:</strong></p>
+        <ul>
+            <li>لجعل الأداة متاحة للجميع عبر الإنترنت، ارفع الملف الذي حفظته (`.html`) إلى أي خدمة استضافة (مثل GitHub Pages، أو أي استضافة مدفوعة).</li>
+            <li>سيتمكن المستخدمون من الوصول إلى الأداة عن طريق رابط الموقع.</li>
+        </ul>
+
+        <p><strong>3. تحويله إلى تطبيق (متقدم):</strong></p>
+        <ul>
+            <li>يمكن تحويل هذا الكود إلى تطبيق هاتف محمول أصيل (Android/iOS) باستخدام تقنيات مثل **WebView** أو إطارات عمل هجينة مثل **Cordova** أو **React Native**.</li>
+            <li>هذه التقنيات تغلف كود الـHTML/CSS/JS داخل بيئة تطبيق، مما يجعله يعمل كتطبيق حقيقي على الهاتف.</li>
+        </ul>
+
+        ---
+
+        <div class="update-section">
+            <h2><i class="icon fas fa-sync-alt"></i> متابعة التحديثات والتحسينات</h2>
+            <p>
+                لضمان أفضل أداء وحصولك على أحدث الميزات والإصلاحات لهذه الأداة ولبقية تطبيقات Axiom AI، يسرنا إبلاغك بأنه تصل تحديثات لهذا التطبيق يمكن متابعتها كل شهر.
+            </p>
+            <p>
+                الرجاء زيارة موقع **Axiom AI Developer Studio** الرسمي عبر الرابط التالي لمتابعة آخر التطورات:
+            </p>
+            <p style="text-align: center;">
+                <a href="https://edunovaai-m9.blogspot.com" target="_blank" title="Axiom AI Developer Studio">
+                    <i class="fas fa-external-link-alt"></i> edunovaai-m9.blogspot.com
+                </a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
